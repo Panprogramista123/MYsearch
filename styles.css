@@ -1,0 +1,51 @@
+/* styles.css */
+
+body {
+    font-family: 'Google Sans', sans-serif; /* Ustawienie czcionki na Google Sans dla całej strony */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 20px; /* Dodatkowy padding dla wyglądu */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+#searchInput {
+    border-radius: 30px; /* Zaokrąglenie krawędzi na 30px */
+    padding: 15px; /* Dodatkowy padding dla wyglądu */
+    font-size: 24px; /* Rozmiar czcionki */
+    border: 2px solid #000; /* Styl obramowania */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Cień */
+    width: 100%; /* Szerokość pola input */
+    max-width: 400px; /* Maksymalna szerokość pola input */
+    text-align: center; /* Wyśrodkowanie tekstu w polu input */
+    margin-bottom: 20px; /* Margines dolny dla odstępu od linków */
+}
+
+ul {
+    list-style-type: none; /* Wyłączenie standardowych stylów listy */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Margines dolny między linkami */
+}
+
+a {
+    font-size: 20px; /* Zwiększenie rozmiaru hiperłączy */
+    display: inline-block; /* Ustawienie hiperłączy jako bloki */
+    margin-left: 0; /* Zresetowanie domyślnego marginesu po lewej stronie */
+}
+
+.no-results {
+    font-style: italic; /* Kursywa dla tekstu informacyjnego */
+    color: #666; /* Kolor szary dla tekstu informacyjnego */
+}
