@@ -49,3 +49,14 @@ a {
     font-style: italic; /* Kursywa dla tekstu informacyjnego */
     color: #666; /* Kolor szary dla tekstu informacyjnego */
 }
+
+.footer {
+    background-color: #f0f0f0; /* Kolor tła */
+    width: 100%; /* Szerokość */
+    padding: 10px 0; /* Wewnętrzny padding */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    position: fixed; /* Pozycja na stałe na dole ekranu */
+    bottom: 0; /* Odległość od dołu */
+    left: 0; /* Odległość od lewej krawędzi */
+    z-index: 999; /* Wysokość warstwy */
+}
