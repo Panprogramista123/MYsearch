@@ -1,0 +1,56 @@
+            - name: Aqua Security Trivy
+  # You may pin to the exact commit or the version.
+  # uses: aquasecurity/trivy-action@d710430a6722f083d3b36b8339ff66b32f22ee55
+  uses: aquasecurity/trivy-action@0.19.0
+  with:
+    # Scan type to use for scanning vulnerability
+    scan-type: # optional, default is image
+    # image reference(for backward compatibility)
+    image-ref: # optional
+    # reference of tar file to scan
+    input: # optional, default is 
+    # Scan reference
+    scan-ref: # optional, default is .
+    # exit code when vulnerabilities were found
+    exit-code: # optional
+    # ignore unfixed vulnerabilities
+    ignore-unfixed: # optional, default is false
+    # comma-separated list of vulnerability types (os,library)
+    vuln-type: # optional, default is os,library
+    # severities of vulnerabilities to be displayed
+    severity: # optional, default is UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL
+    # output format (table, json, template)
+    format: # optional, default is table
+    # use an existing template for rendering output (@/contrib/gitlab.tpl, @/contrib/junit.tpl, @/contrib/html.tpl)
+    template: # optional, default is 
+    # writes results to a file with the specified file name
+    output: # optional, default is 
+    # comma separated list of directories where traversal is skipped
+    skip-dirs: # optional, default is 
+    # comma separated list of files to be skipped
+    skip-files: # optional, default is 
+    # specify where the cache is stored
+    cache-dir: # optional, default is 
+    # timeout (default 5m0s)
+    timeout: # optional, default is 
+    # filter vulnerabilities with OPA rego language
+    ignore-policy: # optional, default is 
+    # hide progress output
+    hide-progress: # optional
+    # output all packages regardless of vulnerability
+    list-all-pkgs: # optional, default is false
+    # comma-separated list of what security issues to detect
+    scanners: # optional, default is 
+    # comma-separated list of relative paths in repository to one or more .trivyignore files
+    trivyignores: # optional, default is 
+    # input artifact type (image, fs, repo, archive) for SBOM generation
+    artifact-type: # optional
+    # GitHub Personal Access Token (PAT) for submitting SBOM to GitHub Dependency Snapshot API
+    github-pat: # optional
+    # path to trivy.yaml config
+    trivy-config: # optional
+    # path to terraform tfvars file
+    tf-vars: # optional
+    # limit severities for SARIF format
+    limit-severities-for-sarif: # optional
+          
